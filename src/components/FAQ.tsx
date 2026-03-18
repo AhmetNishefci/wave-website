@@ -12,7 +12,7 @@ const FAQS = [
   {
     question: "How does Wave find people nearby?",
     answer:
-      "Wave uses Bluetooth Low Energy (BLE) to detect other Wave users in your vicinity. Your phone broadcasts a random, anonymous token that changes every 15 minutes. No GPS or location data is used for discovery.",
+      "Wave uses Bluetooth to detect other Wave users nearby. Your phone sends out an anonymous signal that automatically changes every 15 minutes — so you're always untraceable. No GPS or location data is used for discovery.",
   },
   {
     question: "Can someone see my identity before we match?",

@@ -3,6 +3,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Privacy Policy — Wave",
   description: "How Wave collects, uses, and protects your personal information.",
+  openGraph: {
+    title: "Privacy Policy — Wave",
+    description: "How Wave collects, uses, and protects your personal information.",
+    type: "website",
+  },
 };
 
 export default function PrivacyPolicy() {

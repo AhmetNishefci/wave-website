@@ -1,8 +1,18 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 export function DownloadCTA() {
+  const [showNotice, setShowNotice] = useState(false);
+
+  const handleDownloadClick = (e: React.MouseEvent) => {
+    // TODO: Replace with actual App Store / Google Play URLs when published
+    e.preventDefault();
+    setShowNotice(true);
+    setTimeout(() => setShowNotice(false), 3000);
+  };
+
   return (
     <section id="download" className="py-24 sm:py-32 relative overflow-hidden">
       {/* Background */}
@@ -30,6 +40,7 @@ export function DownloadCTA() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="#"
+              onClick={handleDownloadClick}
               className="inline-flex items-center justify-center gap-3 bg-white text-black font-semibold px-8 py-4 rounded-2xl hover:bg-white/90 transition-all hover:shadow-lg hover:shadow-white/10"
             >
               <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -42,6 +53,7 @@ export function DownloadCTA() {
             </a>
             <a
               href="#"
+              onClick={handleDownloadClick}
               className="inline-flex items-center justify-center gap-3 bg-wave-surface text-white font-semibold px-8 py-4 rounded-2xl border border-wave-muted/20 hover:bg-wave-surface/80 transition-all"
             >
               <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -53,6 +65,16 @@ export function DownloadCTA() {
               </div>
             </a>
           </div>
+
+          {showNotice && (
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="text-sm text-wave-accent mt-6 font-medium"
+            >
+              Coming soon — Wave is launching shortly!
+            </motion.p>
+          )}
 
           <p className="text-xs text-wave-muted mt-8">
             Available on iOS 16+ and Android 12+. Requires Bluetooth Low Energy.

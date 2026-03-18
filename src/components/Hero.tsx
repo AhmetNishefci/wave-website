@@ -58,7 +58,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.3 }}
           >
             <a
-              href="#download"
+              href="/#download"
               className="inline-flex items-center justify-center gap-2 bg-wave-primary hover:bg-wave-primary/90 text-white font-semibold px-8 py-3.5 rounded-full transition-all hover:shadow-lg hover:shadow-wave-primary/25"
             >
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -67,7 +67,7 @@ export function Hero() {
               App Store
             </a>
             <a
-              href="#download"
+              href="/#download"
               className="inline-flex items-center justify-center gap-2 bg-wave-surface hover:bg-wave-surface/80 text-white font-semibold px-8 py-3.5 rounded-full border border-wave-muted/20 transition-all"
             >
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">

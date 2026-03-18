@@ -1,17 +1,23 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const pathname = usePathname();
+  const isHome = pathname === "/";
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  // On homepage, scroll to anchor. On subpages, navigate to homepage with anchor.
+  const sectionHref = (anchor: string) => (isHome ? anchor : `/${anchor}`);
 
   return (
     <header
@@ -22,10 +28,15 @@ export function Header() {
       }`}
     >
       <nav className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        {/* Logo */}
+        {/* Logo — scrolls to top on homepage, navigates home from subpages */}
         <a
-          href="#"
-          onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+          href="/"
+          onClick={(e) => {
+            if (isHome) {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }
+          }}
           className="flex items-center gap-2 group"
         >
           <img src="/wave-hand.png" alt="Wave" width={36} height={36} className="w-9 h-9" />
@@ -37,25 +48,25 @@ export function Header() {
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-8">
           <a
-            href="#how-it-works"
+            href={sectionHref("#how-it-works")}
             className="text-sm text-wave-muted hover:text-white transition-colors"
           >
             How It Works
           </a>
           <a
-            href="#features"
+            href={sectionHref("#features")}
             className="text-sm text-wave-muted hover:text-white transition-colors"
           >
             Features
           </a>
           <a
-            href="#privacy"
+            href={sectionHref("#privacy")}
             className="text-sm text-wave-muted hover:text-white transition-colors"
           >
             Privacy
           </a>
           <a
-            href="#download"
+            href={sectionHref("#download")}
             className="text-sm font-semibold text-white bg-wave-primary hover:bg-wave-primary/90 px-5 py-2 rounded-full transition-all"
           >
             Download
@@ -83,28 +94,28 @@ export function Header() {
         <div className="md:hidden bg-wave-surface/95 backdrop-blur-xl border-t border-wave-surface">
           <div className="px-6 py-4 flex flex-col gap-4">
             <a
-              href="#how-it-works"
+              href={sectionHref("#how-it-works")}
               onClick={() => setMobileOpen(false)}
               className="text-sm text-wave-muted hover:text-white transition-colors"
             >
               How It Works
             </a>
             <a
-              href="#features"
+              href={sectionHref("#features")}
               onClick={() => setMobileOpen(false)}
               className="text-sm text-wave-muted hover:text-white transition-colors"
             >
               Features
             </a>
             <a
-              href="#privacy"
+              href={sectionHref("#privacy")}
               onClick={() => setMobileOpen(false)}
               className="text-sm text-wave-muted hover:text-white transition-colors"
             >
               Privacy
             </a>
             <a
-              href="#download"
+              href={sectionHref("#download")}
               onClick={() => setMobileOpen(false)}
               className="text-sm font-semibold text-white bg-wave-primary px-5 py-2.5 rounded-full text-center"
             >

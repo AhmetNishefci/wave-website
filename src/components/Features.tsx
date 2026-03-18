@@ -33,9 +33,9 @@ const FEATURES = [
         <path d="M12 6v6l4 2" />
       </svg>
     ),
-    title: "Ephemeral Tokens",
+    title: "Untraceable by Design",
     description:
-      "Your Bluetooth identity changes every 15 minutes. No one can track or follow you. Each session is a fresh start.",
+      "Your anonymous Bluetooth signal refreshes every 15 minutes. No one can track or follow you. Each session is a fresh start.",
   },
   {
     icon: (

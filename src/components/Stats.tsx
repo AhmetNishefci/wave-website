@@ -4,10 +4,10 @@ import { motion, useInView } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 
 const STATS = [
+  { value: 0, suffix: "", label: "Personal Data Shared over Bluetooth", icon: "🔒" },
+  { value: 15, suffix: "min", label: "Anonymous Identity Refresh", icon: "🔄" },
+  { value: 18, suffix: "+", label: "Age Verified Users Only", icon: "🔞" },
   { value: 7, suffix: "", label: "Languages Supported", icon: "🌍" },
-  { value: 15, suffix: "min", label: "Token Rotation", icon: "🔄" },
-  { value: 18, suffix: "+", label: "Age Verified", icon: "🔞" },
-  { value: 100, suffix: "%", label: "Privacy Focused", icon: "🛡️" },
 ];
 
 function AnimatedNumber({ value, suffix }: { value: number; suffix: string }) {

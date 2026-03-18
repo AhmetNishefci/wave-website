@@ -15,8 +15,8 @@ const POINTS = [
   },
   {
     icon: "🔄",
-    title: "15-Minute Token Rotation",
-    description: "Your Bluetooth identifier changes every 15 minutes. No one can build a pattern of your movements or presence.",
+    title: "Auto-Refreshing Identity",
+    description: "Your anonymous Bluetooth signal changes every 15 minutes. No one can track your movements or build a profile of your presence.",
   },
   {
     icon: "🔞",

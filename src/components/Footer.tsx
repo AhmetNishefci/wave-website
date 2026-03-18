@@ -9,10 +9,10 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="md:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
+            <Link href="/" className="flex items-center gap-2 mb-4 group">
               <img src="/wave-hand.png" alt="Wave" width={36} height={36} className="w-9 h-9" />
-              <span className="text-xl font-bold text-white">Wave</span>
-            </div>
+              <span className="text-xl font-bold text-white group-hover:text-wave-primary transition-colors">Wave</span>
+            </Link>
             <p className="text-sm text-wave-muted leading-relaxed">
               Discover people nearby. No profiles, no swiping — just real-world connections.
             </p>
@@ -22,15 +22,15 @@ export function Footer() {
           <div>
             <h4 className="text-sm font-semibold text-white mb-4">Product</h4>
             <div className="flex flex-col gap-3">
-              <a href="#how-it-works" className="text-sm text-wave-muted hover:text-white transition-colors">
+              <Link href="/#how-it-works" className="text-sm text-wave-muted hover:text-white transition-colors">
                 How It Works
-              </a>
-              <a href="#features" className="text-sm text-wave-muted hover:text-white transition-colors">
+              </Link>
+              <Link href="/#features" className="text-sm text-wave-muted hover:text-white transition-colors">
                 Features
-              </a>
-              <a href="#privacy" className="text-sm text-wave-muted hover:text-white transition-colors">
-                Privacy & Safety
-              </a>
+              </Link>
+              <Link href="/#privacy" className="text-sm text-wave-muted hover:text-white transition-colors">
+                Safety
+              </Link>
             </div>
           </div>
 
