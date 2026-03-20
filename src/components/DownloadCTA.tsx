@@ -51,19 +51,17 @@ export function DownloadCTA() {
                 <div className="text-base leading-tight">App Store</div>
               </div>
             </a>
-            <a
-              href="#"
-              onClick={handleDownloadClick}
-              className="inline-flex items-center justify-center gap-3 bg-wave-surface text-white font-semibold px-8 py-4 rounded-2xl border border-wave-muted/20 hover:bg-wave-surface/80 transition-all"
+            <div
+              className="inline-flex items-center justify-center gap-3 bg-wave-surface/50 text-wave-muted px-8 py-4 rounded-2xl border border-wave-muted/10 cursor-default"
             >
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" className="opacity-40">
                 <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.807 1.626a1 1 0 010 1.732l-2.807 1.626L15.206 12l2.492-2.492zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z" />
               </svg>
               <div className="text-left">
-                <div className="text-[10px] font-normal opacity-60">Get it on</div>
-                <div className="text-base leading-tight">Google Play</div>
+                <div className="text-[10px] font-normal opacity-40">Coming soon</div>
+                <div className="text-base leading-tight opacity-60">Google Play</div>
               </div>
-            </a>
+            </div>
           </div>
 
           {showNotice && (
@@ -77,7 +75,7 @@ export function DownloadCTA() {
           )}
 
           <p className="text-xs text-wave-muted mt-8">
-            Available on iOS 16+ and Android 12+. Requires Bluetooth Low Energy.
+            Available on iOS 16+. Android coming soon. Requires Bluetooth Low Energy.
           </p>
         </motion.div>
       </div>
