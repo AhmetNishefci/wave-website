@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://wave-app.com/sitemap.xml
+# TODO: Change to https://wave-app.com/sitemap.xml after hosting on custom domain
+Sitemap: https://wave-website-dun.vercel.app/sitemap.xml
