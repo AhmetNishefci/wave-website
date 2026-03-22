@@ -31,6 +31,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "Wave",
+    // TODO: Change to "https://wave-app.com" after hosting on custom domain
+    url: "https://wave-website-dun.vercel.app",
     images: [{ url: "/app-icon.png", width: 512, height: 512, alt: "Wave app icon" }],
   },
   twitter: {
@@ -63,7 +65,6 @@ export default function RootLayout({
     url: "https://wave-website-dun.vercel.app",
     image: "https://wave-website-dun.vercel.app/app-icon.png",
     offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-    aggregateRating: undefined, // Add when App Store reviews exist
   };
 
   const faqJsonLd = {
