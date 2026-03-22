@@ -37,7 +37,7 @@ export function Header() {
               window.scrollTo({ top: 0, behavior: "smooth" });
             }
           }}
-          className="flex items-center gap-2 group"
+          className="flex items-center gap-2 group -ml-2 pl-2 pr-3 py-2"
         >
           <img src="/wave-hand.png" alt="Wave" width={36} height={36} className="w-9 h-9" />
           <span className="text-xl font-bold text-white group-hover:text-wave-primary transition-colors">
