@@ -85,7 +85,7 @@ export function FAQ() {
               >
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : i)}
-                  className="w-full text-left px-6 py-4 flex items-center justify-between gap-4"
+                  className="w-full text-left px-6 py-4 flex items-center justify-between gap-4 cursor-pointer"
                 >
                   <span className={`text-sm font-semibold transition-colors ${isOpen ? "text-white" : "text-wave-text"}`}>
                     {faq.question}
