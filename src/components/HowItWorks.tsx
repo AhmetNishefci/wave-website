@@ -31,7 +31,7 @@ export function HowItWorks() {
           className="text-center mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
@@ -49,7 +49,7 @@ export function HowItWorks() {
               className="relative group"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.15 }}
             >
               <div className="bg-wave-surface border border-wave-muted/10 rounded-3xl p-8 h-full hover:border-wave-primary/30 transition-all duration-300">

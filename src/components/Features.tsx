@@ -83,7 +83,7 @@ export function Features() {
           className="text-center mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
@@ -101,7 +101,7 @@ export function Features() {
               className="bg-wave-surface/50 border border-wave-muted/10 rounded-2xl p-6 hover:border-wave-primary/20 transition-all duration-300"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
+              viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.08 }}
             >
               <div className="w-10 h-10 rounded-xl bg-wave-primary/10 text-wave-primary flex items-center justify-center mb-4">

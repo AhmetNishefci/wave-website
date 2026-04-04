@@ -201,7 +201,7 @@ export function AppScreens() {
           className="text-center mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">See It In Action</h2>
@@ -213,7 +213,7 @@ export function AppScreens() {
             className="flex-shrink-0"
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
             <div className="relative w-[280px] h-[580px] sm:w-[300px] sm:h-[620px]">

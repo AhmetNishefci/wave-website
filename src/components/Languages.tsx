@@ -20,7 +20,7 @@ export function Languages() {
           className="text-center mb-10"
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-50px" }}
+          viewport={{ once: true }}
           transition={{ duration: 0.4 }}
         >
           <p className="text-wave-muted text-sm">

@@ -25,7 +25,7 @@ export function DownloadCTA() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
           <img src="/app-icon.png" alt="Wave" width={80} height={80} className="w-20 h-20 mb-6 mx-auto rounded-2xl" />
