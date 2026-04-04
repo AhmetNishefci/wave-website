@@ -7,22 +7,22 @@ const FAQS = [
   {
     question: "Is Wave free?",
     answer:
-      "Yes, Wave is free to download and use. All core features — discovering people, waving, matching, and exchanging socials — are completely free.",
+      "Yes, Wave is free to download and use. All core features like discovering people, waving, matching, and exchanging socials are completely free.",
   },
   {
     question: "How does Wave find people nearby?",
     answer:
-      "Wave uses Bluetooth to detect other Wave users nearby. Your phone sends out an anonymous signal that automatically changes every 15 minutes — so you're always untraceable. No GPS or location data is used for discovery.",
+      "Wave uses Bluetooth to detect other Wave users nearby. Your phone sends out an anonymous signal that automatically changes every 15 minutes, so you're always untraceable. No GPS or location data is used for discovery.",
   },
   {
     question: "Can someone see my identity before we match?",
     answer:
-      "No. Your name, photo, and social handles are completely hidden until both of you wave at each other. Before a mutual wave, all anyone sees is an anonymous dot on their radar — and optionally, a short note you've set like \"Alex, red hoodie\".",
+      "No. Your name, photo, and social handles are completely hidden until both of you wave at each other. Before a mutual wave, all anyone sees is an anonymous dot on their radar. Optionally, a short note you've set like \"Alex, red hoodie\".",
   },
   {
     question: "What if nobody is nearby?",
     answer:
-      "Wave works best in social settings — bars, cafes, campuses, concerts, and events. If the radar is empty, try using Wave when you're in a busy area. You can also enable Nearby Alerts to get notified when Wave users are around you.",
+      "Wave works best in social settings like bars, cafes, campuses, concerts, and events. If the radar is empty, try using Wave when you're in a busy area. You can also enable Nearby Alerts to get notified when Wave users are around you.",
   },
   {
     question: "Does Wave drain my battery?",
@@ -32,17 +32,17 @@ const FAQS = [
   {
     question: "What happens after we match?",
     answer:
-      "Once you match, you can see each other's Instagram and Snapchat handles. Tap to open their profile directly and start a conversation. Wave is the bridge — the conversation happens on platforms you already use.",
+      "Once you match, you can see each other's Instagram and Snapchat handles. Tap to open their profile directly and start a conversation. Wave is the bridge. The conversation happens on platforms you already use.",
   },
   {
     question: "Can I block or report someone?",
     answer:
-      "Absolutely. Tap any match to access block, report, or remove options. Blocking is instant and bidirectional — the blocked person can't see you on their radar or wave at you. Reports are reviewed by our team.",
+      "Absolutely. Tap any match to access block, report, or remove options. Blocking is instant and bidirectional. The blocked person can't see you on their radar or wave at you. Reports are reviewed by our team.",
   },
   {
     question: "Is my location tracked?",
     answer:
-      "No. Wave uses Bluetooth only — we never track your GPS location. If you opt in to Nearby Alerts, your approximate location is checked once to see if others are nearby, but it's never stored or shared.",
+      "No. Wave uses Bluetooth only. We never track your GPS location. If you opt in to Nearby Alerts, your approximate location is checked once to see if others are nearby, but it's never stored or shared.",
   },
 ];
 

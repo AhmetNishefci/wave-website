@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Wave",
+  title: "Privacy Policy | Wave",
   description: "How Wave collects, uses, and protects your personal information.",
   openGraph: {
-    title: "Privacy Policy — Wave",
+    title: "Privacy Policy | Wave",
     description: "How Wave collects, uses, and protects your personal information.",
     type: "website",
   },
@@ -39,7 +39,7 @@ export default function PrivacyPolicy() {
 
           <h3 className="text-base font-semibold text-white mt-4 mb-2">2.3 Bluetooth Data</h3>
           <p className="text-wave-muted">
-            Wave uses Bluetooth Low Energy (BLE) to discover nearby users. Your device broadcasts an ephemeral token — a random identifier that changes every 15 minutes. This token cannot be used to identify you personally and is not linked to your real identity until a mutual match occurs. We do not collect or store Bluetooth signal data on our servers.
+            Wave uses Bluetooth Low Energy (BLE) to discover nearby users. Your device broadcasts an ephemeral token, a random identifier that changes every 15 minutes. This token cannot be used to identify you personally and is not linked to your real identity until a mutual match occurs. We do not collect or store Bluetooth signal data on our servers.
           </p>
 
           <h3 className="text-base font-semibold text-white mt-4 mb-2">2.4 Location Data</h3>

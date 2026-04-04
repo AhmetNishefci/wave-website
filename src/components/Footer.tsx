@@ -14,7 +14,7 @@ export function Footer() {
               <span className="text-xl font-bold text-white group-hover:text-wave-primary transition-colors">Wave</span>
             </Link>
             <p className="text-sm text-wave-muted leading-relaxed">
-              Discover people nearby. No profiles, no swiping — just real-world connections.
+              Discover people nearby. No profiles, no swiping. Just real-world connections.
             </p>
           </div>
 

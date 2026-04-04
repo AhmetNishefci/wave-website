@@ -70,7 +70,7 @@ export function DownloadCTA() {
               animate={{ opacity: 1, y: 0 }}
               className="text-sm text-wave-accent mt-6 font-medium"
             >
-              Coming soon — Wave is launching shortly!
+              Coming soon! Wave is launching shortly.
             </motion.p>
           )}
 

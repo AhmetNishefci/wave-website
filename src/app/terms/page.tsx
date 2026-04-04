@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms of Service — Wave",
+  title: "Terms of Service | Wave",
   description: "Terms and conditions for using the Wave app.",
   openGraph: {
-    title: "Terms of Service — Wave",
+    title: "Terms of Service | Wave",
     description: "Terms and conditions for using the Wave app.",
     type: "website",
   },

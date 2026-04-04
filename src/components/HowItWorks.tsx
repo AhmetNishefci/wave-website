@@ -7,13 +7,13 @@ const STEPS = [
     icon: "📡",
     title: "Discover",
     description:
-      "Open Wave and your phone starts discovering other Wave users nearby via Bluetooth. No GPS, no location tracking — only nearby detection.",
+      "Open Wave and your phone starts discovering other Wave users nearby via Bluetooth. No GPS, no location tracking. Only nearby detection.",
   },
   {
     icon: "👋",
     title: "Wave",
     description:
-      "See someone on your radar? Send them a wave. It's anonymous — they'll know someone nearby waved, but not who until they wave back.",
+      "See someone on your radar? Send them a wave. It's anonymous. They'll know someone nearby waved, but not who until they wave back.",
   },
   {
     icon: "🤝",

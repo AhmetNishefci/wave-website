@@ -13,7 +13,7 @@ const FEATURES = [
     ),
     title: "Bluetooth Discovery",
     description:
-      "Discover people nearby using Bluetooth Low Energy. No GPS, no location sharing — just who's around you, right now.",
+      "Discover people nearby using Bluetooth Low Energy. No GPS, no location sharing. Just who's around you, right now.",
   },
   {
     icon: (
@@ -24,7 +24,7 @@ const FEATURES = [
     ),
     title: "No Profiles",
     description:
-      "No photos, no swiping. Add an optional note like \"Alex, red hoodie\" to help people find you — but your identity stays hidden until you both wave.",
+      "No photos, no swiping. Add an optional note like \"Alex, red hoodie\" to help people find you. Your identity stays hidden until you both wave.",
   },
   {
     icon: (
@@ -56,7 +56,7 @@ const FEATURES = [
     ),
     title: "Block & Report",
     description:
-      "Instantly block anyone from your radar. Report inappropriate behavior with one tap. Your safety comes first — always.",
+      "Instantly block anyone from your radar. Report inappropriate behavior with one tap. Your safety always comes first.",
   },
   {
     icon: (
@@ -66,7 +66,7 @@ const FEATURES = [
     ),
     title: "Multi-Platform Socials",
     description:
-      "Share your Instagram and Snapchat handles with matches. Connect on the platforms you already use — Wave is the bridge, not the destination.",
+      "Share your Instagram and Snapchat handles with matches. Connect on the platforms you already use. Wave is the bridge, not the destination.",
   },
 ];
 

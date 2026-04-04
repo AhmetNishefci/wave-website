@@ -3,9 +3,9 @@
 import { motion } from "framer-motion";
 
 const ROWS = [
-  { label: "Discovery", wave: "Bluetooth — who's actually here", others: "GPS / Swiping on photos" },
+  { label: "Discovery", wave: "Bluetooth. Who's actually here", others: "GPS / Swiping on photos" },
   { label: "Identity", wave: "Hidden until mutual match", others: "Public profile with photos" },
-  { label: "Matching", wave: "Both must wave — consent first", others: "One-sided likes and messages" },
+  { label: "Matching", wave: "Both must wave. Consent first", others: "One-sided likes and messages" },
   { label: "Tracking", wave: "No GPS, no location history", others: "Continuous location tracking" },
   { label: "Connection", wave: "Exchange real socials (IG, Snap)", others: "Chat inside yet another app" },
 ];
@@ -25,7 +25,7 @@ export function Comparison() {
             Not Another Dating App
           </h2>
           <p className="text-wave-muted text-lg max-w-2xl mx-auto">
-            Wave rethinks how people connect — starting with real-world presence, not profiles
+            Wave rethinks how people connect. Starting with real-world presence, not profiles
           </p>
         </motion.div>
 

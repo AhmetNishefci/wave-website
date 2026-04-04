@@ -10,9 +10,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Wave — Discover People Nearby",
+  title: "Wave. Discover People Nearby",
   description:
-    "Wave uses Bluetooth to discover people around you. Wave at someone — if they wave back, you match and see each other's socials. No profiles, no swiping, just real-world connections.",
+    "Wave uses Bluetooth to discover people around you. Wave at someone. If they wave back, you match and see each other's socials. No profiles, no swiping, just real-world connections.",
   keywords: [
     "wave",
     "nearby",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     "real world",
   ],
   openGraph: {
-    title: "Wave — Discover People Nearby",
+    title: "Wave. Discover People Nearby",
     description:
       "Wave at people around you. If they wave back, you match and see each other's socials.",
     type: "website",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Wave — Discover People Nearby",
+    title: "Wave. Discover People Nearby",
     description:
       "Wave at people around you. If they wave back, you match and see each other's socials.",
     images: ["/app-icon.png"],
@@ -59,7 +59,7 @@ export default function RootLayout({
     operatingSystem: "iOS",
     applicationCategory: "SocialNetworkingApplication",
     description:
-      "Wave uses Bluetooth to discover people around you. Wave at someone — if they wave back, you match and see each other's socials. No profiles, no swiping, just real-world connections.",
+      "Wave uses Bluetooth to discover people around you. Wave at someone. If they wave back, you match and see each other's socials. No profiles, no swiping, just real-world connections.",
     url: "https://www.wavenearby.com",
     image: "https://www.wavenearby.com/app-icon.png",
     offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
@@ -74,7 +74,7 @@ export default function RootLayout({
         name: "How does Wave find people nearby?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Wave uses Bluetooth to detect other Wave users nearby. Your phone sends out an anonymous signal that automatically changes every 15 minutes — so you're always untraceable. No GPS or location data is used for discovery.",
+          text: "Wave uses Bluetooth to detect other Wave users nearby. Your phone sends out an anonymous signal that automatically changes every 15 minutes, so you're always untraceable. No GPS or location data is used for discovery.",
         },
       },
       {
@@ -82,7 +82,7 @@ export default function RootLayout({
         name: "Is Wave free?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes, Wave is free to download and use. All core features — discovering people, waving, matching, and exchanging socials — are completely free.",
+          text: "Yes, Wave is free to download and use. All core features like discovering people, waving, matching, and exchanging socials are completely free.",
         },
       },
       {
@@ -106,7 +106,7 @@ export default function RootLayout({
         name: "Is my location tracked?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "No. Wave uses Bluetooth only — we never track your GPS location. If you opt in to Nearby Alerts, your approximate location is checked once to see if others are nearby, but it's never stored or shared.",
+          text: "No. Wave uses Bluetooth only. We never track your GPS location. If you opt in to Nearby Alerts, your approximate location is checked once to see if others are nearby, but it's never stored or shared.",
         },
       },
     ],

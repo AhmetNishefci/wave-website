@@ -36,7 +36,7 @@ export function Hero() {
           >
             Wave at people{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-wave-primary to-wave-accent">
-              around you
+              nearby
             </span>
           </motion.h1>
 
@@ -46,7 +46,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Wave uses Bluetooth to discover people nearby. Send a wave — if they
+            Wave uses Bluetooth to discover people nearby. Send a wave. If they
             wave back, you match and see each other&apos;s socials. No profiles,
             no swiping, just real connections.
           </motion.p>

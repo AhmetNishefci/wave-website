@@ -35,6 +35,7 @@ export function Header() {
             if (isHome) {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: "smooth" });
+              history.replaceState(null, "", "/");
             }
           }}
           className="flex items-center gap-2 group -ml-2 pl-2 pr-3 py-2"
