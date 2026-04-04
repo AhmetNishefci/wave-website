@@ -119,19 +119,56 @@ function SettingsScreen() {
         <h3 className="text-white text-sm font-bold">Settings</h3>
       </div>
       <div className="px-3 flex flex-col gap-2 flex-1 overflow-hidden">
-        {/* Socials */}
-        <div className="bg-wave-surface rounded-xl px-3 py-2">
-          <p className="text-wave-muted text-[6px] uppercase tracking-wider mb-1.5">Socials</p>
-          <div className="flex items-center justify-between mb-1">
+        {/* Language */}
+        <div className="bg-wave-surface rounded-xl px-3 py-2.5">
+          <p className="text-wave-muted text-[6px] uppercase tracking-wider mb-1.5">Language</p>
+          <div className="flex items-center justify-between">
             <div className="flex items-center gap-1.5">
-              <span className="text-[8px]">📷</span>
+              <span className="text-[10px]">🇬🇧</span>
+              <span className="text-white text-[9px]">English</span>
+            </div>
+            <span className="text-wave-muted text-[8px]">›</span>
+          </div>
+        </div>
+
+        {/* Discovery */}
+        <div className="bg-wave-surface rounded-xl px-3 py-2.5">
+          <p className="text-wave-muted text-[6px] uppercase tracking-wider mb-1.5">Discovery</p>
+          <p className="text-wave-muted text-[7px] mb-1">Show me</p>
+          <div className="flex flex-col gap-1 mb-2">
+            {["Men", "Women", "Everyone"].map((opt, i) => (
+              <div key={opt} className={`rounded-lg px-2.5 py-1.5 flex items-center justify-between ${i === 2 ? "bg-wave-primary/15 border border-wave-primary/30" : "bg-wave-bg"}`}>
+                <span className={`text-[8px] font-semibold ${i === 2 ? "text-white" : "text-wave-muted"}`}>{opt}</span>
+                {i === 2 && <span className="text-wave-primary text-[8px]">✓</span>}
+              </div>
+            ))}
+          </div>
+          <p className="text-wave-muted text-[7px] mb-1">Age Range</p>
+          <div className="relative h-4 flex items-center px-1">
+            <div className="w-full h-[2px] bg-wave-bg rounded-full" />
+            <div className="absolute h-[2px] bg-wave-primary rounded-full" style={{ left: "10%", right: "30%" }} />
+            <div className="absolute w-3 h-3 bg-white rounded-full shadow-sm" style={{ left: "10%" }} />
+            <div className="absolute w-3 h-3 bg-white rounded-full shadow-sm" style={{ right: "30%" }} />
+          </div>
+          <div className="flex justify-between px-1 mt-0.5">
+            <span className="text-wave-muted text-[7px]">18</span>
+            <span className="text-wave-muted text-[7px]">30</span>
+          </div>
+        </div>
+
+        {/* Socials */}
+        <div className="bg-wave-surface rounded-xl px-3 py-2.5">
+          <p className="text-wave-muted text-[6px] uppercase tracking-wider mb-1.5">Socials</p>
+          <div className="flex items-center justify-between mb-1.5">
+            <div className="flex items-center gap-1.5">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#E1306C" strokeWidth="2" strokeLinecap="round"><rect x="2" y="2" width="20" height="20" rx="5" /><circle cx="12" cy="12" r="5" /><circle cx="18" cy="6" r="1.5" fill="#E1306C" stroke="none" /></svg>
               <span className="text-wave-muted text-[8px]">Instagram</span>
             </div>
             <span className="text-white text-[8px]">@alex.nearby</span>
           </div>
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-1.5">
-              <span className="text-[8px]">👻</span>
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="#FFFC00" stroke="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14l-1.5-4.5L4 10l4.5-1.5L10 4l1.5 4.5L16 10l-4.5 1.5L10 16z" /></svg>
               <span className="text-wave-muted text-[8px]">Snapchat</span>
             </div>
             <span className="text-white text-[8px]">alex_snap</span>
@@ -139,78 +176,24 @@ function SettingsScreen() {
         </div>
 
         {/* Note */}
-        <div className="bg-wave-surface rounded-xl px-3 py-2">
+        <div className="bg-wave-surface rounded-xl px-3 py-2.5">
           <p className="text-wave-muted text-[6px] uppercase tracking-wider mb-1">Note</p>
           <div className="flex items-center justify-between">
-            <span className="text-white text-[8px]">Alex, red hoodie</span>
+            <span className="text-white text-[8px]">&quot;Alex, red hoodie&quot;</span>
             <span className="text-wave-muted text-[8px]">›</span>
           </div>
         </div>
 
-        {/* Discovery */}
-        <div className="bg-wave-surface rounded-xl px-3 py-2">
-          <p className="text-wave-muted text-[6px] uppercase tracking-wider mb-1">Discovery</p>
-          <div className="flex items-center justify-between mb-1">
-            <span className="text-wave-muted text-[8px]">Show me</span>
-            <span className="text-white text-[8px]">Everyone</span>
+        {/* Safety */}
+        <div className="bg-wave-surface rounded-xl px-3 py-2.5">
+          <p className="text-wave-muted text-[6px] uppercase tracking-wider mb-1.5">Safety</p>
+          <div className="flex items-center justify-between mb-1.5">
+            <span className="text-white text-[8px]">Blocked Users</span>
+            <span className="text-wave-muted text-[8px]">›</span>
           </div>
           <div className="flex items-center justify-between">
-            <span className="text-wave-muted text-[8px]">Age Range</span>
-            <span className="text-white text-[8px]">18 – 30</span>
-          </div>
-        </div>
-
-        {/* Linked Accounts */}
-        <div className="bg-wave-surface rounded-xl px-3 py-2">
-          <p className="text-wave-muted text-[6px] uppercase tracking-wider mb-1.5">Linked Accounts</p>
-          <div className="flex items-center justify-between mb-1">
-            <div className="flex items-center gap-1.5">
-              <span className="text-[8px]"></span>
-              <span className="text-white text-[8px]">Apple</span>
-            </div>
-            <span className="text-wave-accent text-[8px]">✓</span>
-          </div>
-          <div className="flex items-center justify-between mb-1">
-            <div className="flex items-center gap-1.5">
-              <span className="text-[8px]">G</span>
-              <span className="text-white text-[8px]">Google</span>
-            </div>
-            <span className="text-wave-muted text-[8px]">Link</span>
-          </div>
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-1.5">
-              <span className="text-[8px]">📱</span>
-              <span className="text-white text-[8px]">Phone</span>
-            </div>
-            <span className="text-wave-muted text-[8px]">Link</span>
-          </div>
-        </div>
-
-        {/* Language */}
-        <div className="bg-wave-surface rounded-xl px-3 py-2">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-1.5">
-              <span className="text-[10px]">🇬🇧</span>
-              <span className="text-white text-[8px]">Language</span>
-            </div>
-            <span className="text-wave-muted text-[8px]">English ›</span>
-          </div>
-        </div>
-
-        {/* Support & Legal */}
-        <div className="bg-wave-surface rounded-xl px-3 py-2">
-          <p className="text-wave-muted text-[6px] uppercase tracking-wider mb-1.5">Support</p>
-          <div className="flex items-center justify-between mb-1">
             <span className="text-white text-[8px]">Contact Support</span>
             <span className="text-wave-muted text-[8px]">›</span>
-          </div>
-          <div className="flex items-center justify-between mb-1">
-            <span className="text-white text-[8px]">Privacy Policy</span>
-            <span className="text-wave-muted text-[8px]">↗</span>
-          </div>
-          <div className="flex items-center justify-between">
-            <span className="text-white text-[8px]">Terms of Service</span>
-            <span className="text-wave-muted text-[8px]">↗</span>
           </div>
         </div>
       </div>
