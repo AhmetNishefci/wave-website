@@ -54,10 +54,10 @@ export function FAQ() {
       <div className="max-w-3xl mx-auto px-6">
         <motion.div
           className="text-center mb-16"
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.3 }}
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
             Frequently Asked Questions
@@ -78,10 +78,10 @@ export function FAQ() {
                     ? "bg-wave-surface border-wave-primary/20"
                     : "bg-wave-surface/50 border-wave-muted/10 hover:border-wave-muted/20"
                 }`}
-                initial={{ opacity: 0, y: 10 }}
+                initial={{ opacity: 0, y: 8 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.3, delay: i * 0.05 }}
+                transition={{ duration: 0.25, delay: i * 0.03 }}
               >
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : i)}

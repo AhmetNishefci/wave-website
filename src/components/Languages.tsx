@@ -18,10 +18,10 @@ export function Languages() {
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           className="text-center mb-10"
-          initial={{ opacity: 0, y: 15 }}
+          initial={{ opacity: 0, y: 8 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.4 }}
+          transition={{ duration: 0.3 }}
         >
           <p className="text-wave-muted text-sm">
             Available in <span className="text-white font-semibold">7 languages</span> across Europe and beyond
@@ -33,10 +33,10 @@ export function Languages() {
             <motion.div
               key={lang.name}
               className="flex items-center gap-2 bg-wave-surface/50 border border-wave-muted/10 rounded-full px-4 py-2"
-              initial={{ opacity: 0, scale: 0.9 }}
+              initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.3, delay: i * 0.05 }}
+              transition={{ duration: 0.25, delay: i * 0.03 }}
             >
               <span className="text-lg">{lang.flag}</span>
               <span className="text-sm text-wave-text">{lang.name}</span>

@@ -32,10 +32,10 @@ export function Privacy() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left: content */}
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
+            initial={{ opacity: 0, x: -10 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.3 }}
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
               Privacy is not a feature.{" "}
@@ -52,10 +52,10 @@ export function Privacy() {
                 <motion.div
                   key={point.title}
                   className="flex gap-4"
-                  initial={{ opacity: 0, x: -10 }}
+                  initial={{ opacity: 0, x: -5 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.3, delay: i * 0.1 }}
+                  transition={{ duration: 0.25, delay: i * 0.05 }}
                 >
                   <div className="w-10 h-10 rounded-xl bg-wave-surface border border-wave-muted/10 flex items-center justify-center text-lg shrink-0">
                     {point.icon}
@@ -76,10 +76,10 @@ export function Privacy() {
           {/* Right: visual */}
           <motion.div
             className="relative hidden lg:flex items-center justify-center"
-            initial={{ opacity: 0, scale: 0.95 }}
+            initial={{ opacity: 0, scale: 0.97 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.3 }}
           >
             <div className="relative w-80 h-80">
               {/* Shield */}

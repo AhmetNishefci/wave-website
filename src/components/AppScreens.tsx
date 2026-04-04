@@ -199,10 +199,10 @@ export function AppScreens() {
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           className="text-center mb-16"
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.3 }}
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">See It In Action</h2>
           <p className="text-wave-muted text-lg max-w-2xl mx-auto">From discovering people nearby to exchanging socials — here&apos;s what Wave looks like</p>
@@ -211,10 +211,10 @@ export function AppScreens() {
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
           <motion.div
             className="flex-shrink-0"
-            initial={{ opacity: 0, scale: 0.95 }}
+            initial={{ opacity: 0, scale: 0.97 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.3 }}
           >
             <div className="relative w-[280px] h-[580px] sm:w-[300px] sm:h-[620px]">
               <div className="absolute inset-0 bg-wave-surface rounded-[3rem] border-2 border-wave-muted/20 shadow-2xl shadow-wave-primary/10 overflow-hidden">

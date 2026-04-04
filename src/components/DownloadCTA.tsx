@@ -23,10 +23,10 @@ export function DownloadCTA() {
 
       <div className="relative max-w-3xl mx-auto px-6 text-center">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.3 }}
         >
           <img src="/app-icon.png" alt="Wave" width={80} height={80} className="w-20 h-20 mb-6 mx-auto rounded-2xl" />
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">

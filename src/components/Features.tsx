@@ -81,10 +81,10 @@ export function Features() {
       <div className="relative max-w-7xl mx-auto px-6">
         <motion.div
           className="text-center mb-16"
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.3 }}
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
             Built Different
@@ -99,10 +99,10 @@ export function Features() {
             <motion.div
               key={feature.title}
               className="bg-wave-surface/50 border border-wave-muted/10 rounded-2xl p-6 hover:border-wave-primary/20 transition-all duration-300"
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: i * 0.08 }}
+              transition={{ duration: 0.3, delay: i * 0.04 }}
             >
               <div className="w-10 h-10 rounded-xl bg-wave-primary/10 text-wave-primary flex items-center justify-center mb-4">
                 {feature.icon}

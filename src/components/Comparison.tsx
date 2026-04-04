@@ -16,10 +16,10 @@ export function Comparison() {
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           className="text-center mb-14"
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.3 }}
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
             Not Another Dating App
@@ -31,10 +31,10 @@ export function Comparison() {
 
         <motion.div
           className="max-w-3xl mx-auto"
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.1 }}
+          transition={{ duration: 0.3, delay: 0.05 }}
         >
           {/* Header */}
           <div className="grid grid-cols-3 gap-4 mb-4 px-4">
@@ -53,10 +53,10 @@ export function Comparison() {
               <motion.div
                 key={row.label}
                 className="grid grid-cols-3 gap-4 bg-wave-surface/50 border border-wave-muted/10 rounded-2xl px-4 py-4 items-center"
-                initial={{ opacity: 0, x: -10 }}
+                initial={{ opacity: 0, x: -5 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.3, delay: i * 0.06 }}
+                transition={{ duration: 0.25, delay: i * 0.03 }}
               >
                 <div>
                   <span className="text-xs font-semibold text-white">{row.label}</span>

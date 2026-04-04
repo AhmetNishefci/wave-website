@@ -50,10 +50,10 @@ export function Stats() {
             <motion.div
               key={stat.label}
               className="text-center"
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: i * 0.1 }}
+              transition={{ duration: 0.3, delay: i * 0.05 }}
             >
               <div className="text-2xl mb-3">{stat.icon}</div>
               <div className="text-3xl sm:text-4xl font-bold text-white mb-1">

@@ -29,10 +29,10 @@ export function HowItWorks() {
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           className="text-center mb-16"
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.3 }}
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
             How It Works
@@ -47,10 +47,10 @@ export function HowItWorks() {
             <motion.div
               key={step.title}
               className="relative group"
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.15 }}
+              transition={{ duration: 0.3, delay: i * 0.08 }}
             >
               <div className="bg-wave-surface border border-wave-muted/10 rounded-3xl p-8 h-full hover:border-wave-primary/30 transition-all duration-300">
                 {/* Icon */}
