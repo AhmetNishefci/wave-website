@@ -114,8 +114,8 @@ export default function TermsOfService() {
           <h2 className="text-xl font-semibold text-white mb-3">13. Contact</h2>
           <p className="text-wave-muted">
             If you have any questions about these Terms, please contact us at{" "}
-            <a href="mailto:support@wave-app.com" className="text-wave-primary hover:underline">
-              support@wave-app.com
+            <a href="mailto:support@wavenearby.com" className="text-wave-primary hover:underline">
+              support@wavenearby.com
             </a>.
           </p>
         </section>

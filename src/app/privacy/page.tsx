@@ -104,7 +104,7 @@ export default function PrivacyPolicy() {
             <li><strong>Objection:</strong> Object to processing of your data for specific purposes.</li>
           </ul>
           <p className="text-wave-muted mt-2">
-            To exercise these rights, contact us at <a href="mailto:support@wave-app.com" className="text-wave-primary hover:underline">support@wave-app.com</a>.
+            To exercise these rights, contact us at <a href="mailto:support@wavenearby.com" className="text-wave-primary hover:underline">support@wavenearby.com</a>.
           </p>
         </section>
 
@@ -133,8 +133,8 @@ export default function PrivacyPolicy() {
           <h2 className="text-xl font-semibold text-white mb-3">10. Contact Us</h2>
           <p className="text-wave-muted">
             If you have any questions about this Privacy Policy, please contact us at{" "}
-            <a href="mailto:support@wave-app.com" className="text-wave-primary hover:underline">
-              support@wave-app.com
+            <a href="mailto:support@wavenearby.com" className="text-wave-primary hover:underline">
+              support@wavenearby.com
             </a>.
           </p>
         </section>

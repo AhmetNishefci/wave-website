@@ -52,10 +52,10 @@ export function Footer() {
             <h4 className="text-sm font-semibold text-white mb-4">Support</h4>
             <div className="flex flex-col gap-3">
               <a
-                href="mailto:support@wave-app.com"
+                href="mailto:support@wavenearby.com"
                 className="text-sm text-wave-muted hover:text-white transition-colors"
               >
-                support@wave-app.com
+                support@wavenearby.com
               </a>
             </div>
           </div>

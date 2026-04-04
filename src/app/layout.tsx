@@ -31,8 +31,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "Wave",
-    // TODO: Change to "https://wave-app.com" after hosting on custom domain
-    url: "https://wave-website-dun.vercel.app",
+    url: "https://www.wavenearby.com",
     images: [{ url: "/app-icon.png", width: 512, height: 512, alt: "Wave app icon" }],
   },
   twitter: {
@@ -53,7 +52,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // TODO: Change url to "https://wave-app.com" after hosting on custom domain
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "MobileApplication",
@@ -62,8 +60,8 @@ export default function RootLayout({
     applicationCategory: "SocialNetworkingApplication",
     description:
       "Wave uses Bluetooth to discover people around you. Wave at someone — if they wave back, you match and see each other's socials. No profiles, no swiping, just real-world connections.",
-    url: "https://wave-website-dun.vercel.app",
-    image: "https://wave-website-dun.vercel.app/app-icon.png",
+    url: "https://www.wavenearby.com",
+    image: "https://www.wavenearby.com/app-icon.png",
     offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
   };
 

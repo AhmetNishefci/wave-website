@@ -1,8 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  // TODO: Change to "https://wave-app.com" after hosting on custom domain
-  const baseUrl = "https://wave-website-dun.vercel.app";
+  const baseUrl = "https://www.wavenearby.com";
 
   return [
     {
