@@ -57,7 +57,7 @@ export default function TermsOfService() {
         <section>
           <h2 className="text-xl font-semibold text-white mb-3">5. User Content</h2>
           <p className="text-wave-muted">
-            You are responsible for the content you share through Wave, including your note (visible to nearby users), social media handles, and any reports or support tickets you submit. You agree not to share offensive, harmful, or inappropriate content. We reserve the right to remove content and suspend accounts that violate these Terms.
+            You are responsible for the content you share through Wave, including your note (visible to nearby users), social media handles, and any reports or support tickets you submit. You agree not to share offensive, harmful, or inappropriate content. Wave has a zero tolerance policy for objectionable content or abusive users. We will remove content and suspend or terminate accounts that violate these Terms within 24 hours of receiving a report. Content is filtered automatically, and users can report and block other users at any time.
           </p>
         </section>
 
@@ -71,7 +71,7 @@ export default function TermsOfService() {
         <section>
           <h2 className="text-xl font-semibold text-white mb-3">7. Safety and Reporting</h2>
           <p className="text-wave-muted">
-            Wave provides tools to block and report users. If you experience harassment or inappropriate behavior, we encourage you to use the in-app reporting feature. We review all reports and may take action including account suspension or termination. However, Wave is not responsible for the behavior of its users, and interactions that continue outside the App (e.g., on Instagram or Snapchat) are beyond our control.
+            Wave provides tools to block and report users directly from the radar and match screens. If you experience harassment or inappropriate behavior, use the in-app reporting feature — select a reason and the user will be immediately blocked. We review all reports within 24 hours and take action including content removal, account suspension, or permanent termination. However, Wave is not responsible for the behavior of its users, and interactions that continue outside the App (e.g., on Instagram or Snapchat) are beyond our control.
           </p>
         </section>
 
