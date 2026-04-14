@@ -61,8 +61,11 @@ export default function RootLayout({
     description:
       "Wave uses Bluetooth to discover people around you. Wave at someone. If they wave back, you match and see each other's socials. No profiles, no swiping, just real-world connections.",
     url: "https://www.wavenearby.com",
+    downloadUrl: "https://apps.apple.com/app/id6760919706",
+    installUrl: "https://apps.apple.com/app/id6760919706",
     image: "https://www.wavenearby.com/app-icon.png",
     offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    author: { "@type": "Organization", name: "BK Solutions SH.P.K." },
   };
 
   const faqJsonLd = {
